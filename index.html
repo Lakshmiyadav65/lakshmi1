@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lakshmi Dev — Full Stack Developer Portfolio</title>
+  <meta name="description" content="Premium personal portfolio website of Lakshmi Dev, Full Stack Developer specializing in production-ready AI applications, RAG pipelines, and multi-agent systems.">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Dynamic Ambient Glow Background elements -->
+  <div class="glow-container">
+    <div id="glow-cursor" class="glow-cursor"></div>
+    <div class="glow-ambient-1"></div>
+    <div class="glow-ambient-2"></div>
+  </div>
+
+  <!-- Sticky Glassmorphic Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="#hero" class="logo" aria-label="Lakshmi Dev Home">
+        <span>Lakshmi Dev</span>
+        <div class="logo-dot"></div>
+      </a>
+      
+      <nav aria-label="Main Navigation">
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#works" class="nav-link">Selected Works</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#contact" class="btn-contact-nav">Let's Collaborate</a></li>
+        </ul>
+      </nav>
+
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge-available">
+          <div class="badge-dot"></div>
+          <span>Available for contract & full-time positions</span>
+        </div>
+        <h1 class="hero-title">Crafting interfaces that feel <span class="accent-text">intuitive</span>.</h1>
+        <p class="hero-subtitle">
+          UI/UX Developer and Product Designer specializing in user research, interactive wireframing, and responsive frontend implementation. Translating creative visual systems into clean, production-ready web code.
+        </p>
+        <div class="hero-ctas">
+          <a href="#works" class="btn-primary">
+            <span>View Projects</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <span>Discuss Project</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="profile-card">
+          <!-- Neural Network SVG Visual Representation instead of PNG image -->
+          <svg class="portrait-svg" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Visual mesh representing Lakshmi Dev">
+            <rect width="100%" height="100%" fill="#12141c" rx="16"/>
+            <!-- Grid pattern overlay -->
+            <path d="M 0 50 L 400 50 M 0 100 L 400 100 M 0 150 L 400 150 M 0 200 L 400 200 M 0 250 L 400 250 M 0 300 L 400 300 M 0 350 L 400 350 M 0 400 L 400 400 M 0 450 L 400 450" stroke="rgba(255, 107, 53, 0.05)" stroke-width="1"/>
+            <path d="M 50 0 L 50 500 M 100 0 L 100 500 M 150 0 L 150 500 M 200 0 L 200 500 M 250 0 L 250 500 M 300 0 L 300 500 M 350 0 L 350 500" stroke="rgba(255, 107, 53, 0.05)" stroke-width="1"/>
+            
+            <circle cx="200" cy="230" r="160" fill="url(#avatarGlow)" opacity="0.5"/>
+            <defs>
+              <radialGradient id="avatarGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                <stop offset="0%" stop-color="var(--accent-orange)" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent-orange)"/>
+                <stop offset="50%" stop-color="#ef4444"/>
+                <stop offset="100%" stop-color="var(--accent-amber)"/>
+              </linearGradient>
+            </defs>
+            
+            <g opacity="0.85">
+              <!-- Radar Concentric Shapes -->
+              <circle cx="200" cy="230" r="130" stroke="var(--accent-orange)" stroke-width="1" stroke-dasharray="8 12" opacity="0.2"/>
+              <circle cx="200" cy="230" r="100" stroke="var(--accent-amber)" stroke-width="1" stroke-dasharray="4 8" opacity="0.3"/>
+              
+              <!-- Abstract Face/Network Graph Node Structure -->
+              <path d="M 200 120 L 130 190 L 130 270 L 200 340 L 270 270 L 270 190 Z" stroke="url(#cyberGrad)" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M 200 150 L 150 200 L 150 260 L 200 310 L 250 260 L 250 200 Z" stroke="url(#cyberGrad)" stroke-width="1" stroke-linejoin="round" opacity="0.5" stroke-dasharray="3 3"/>
+              
+              <!-- Core Processor -->
+              <rect x="180" y="210" width="40" height="40" rx="4" fill="rgba(18, 20, 28, 0.9)" stroke="var(--accent-amber)" stroke-width="2"/>
+              <line x1="200" y1="120" x2="200" y2="210" stroke="var(--accent-orange)" stroke-width="1.5"/>
+              <line x1="200" y1="250" x2="200" y2="340" stroke="var(--accent-orange)" stroke-width="1.5"/>
+              <line x1="130" y1="230" x2="180" y2="230" stroke="var(--accent-amber)" stroke-width="1.5"/>
+              <line x1="220" y1="230" x2="270" y2="230" stroke="var(--accent-amber)" stroke-width="1.5"/>
+
+              <!-- Interconnecting Nodes -->
+              <circle cx="200" cy="120" r="6" fill="var(--accent-amber)"/>
+              <circle cx="130" cy="190" r="4" fill="var(--accent-orange)"/>
+              <circle cx="270" cy="190" r="4" fill="var(--accent-orange)"/>
+              <circle cx="130" cy="270" r="5" fill="var(--accent-amber)"/>
+              <circle cx="270" cy="270" r="5" fill="var(--accent-amber)"/>
+              <circle cx="200" cy="340" r="6" fill="var(--accent-orange)"/>
+
+              <!-- Interactive Pulses -->
+              <circle cx="165" cy="155" r="4" fill="var(--accent-amber)"/>
+              <circle cx="235" cy="155" r="4" fill="var(--accent-orange)"/>
+              <circle cx="165" cy="305" r="3" fill="var(--green)"/>
+              <circle cx="235" cy="305" r="3" fill="var(--accent-orange)"/>
+              <circle cx="200" cy="230" r="3" fill="#FFF"/>
+            </g>
+
+            <!-- Technical overlays -->
+            <text x="35" y="440" fill="var(--accent-amber)" font-family="var(--font-mono)" font-size="10" opacity="0.7">ROLE: UI/UX DEVELOPER</text>
+            <text x="35" y="455" fill="var(--text-muted)" font-family="var(--font-mono)" font-size="9" opacity="0.5">LOCATION: BENGALURU, IN</text>
+            <text x="300" y="55" fill="var(--accent-orange)" font-family="var(--font-mono)" font-size="10" opacity="0.8">SYS_OK</text>
+            <circle cx="330" cy="51" r="3" fill="var(--green)"/>
+          </svg>
+          <div class="profile-card-info">
+            <div>
+              <h3>Lakshmi Dev</h3>
+              <p>UI/UX Developer</p>
+            </div>
+            <div class="profile-card-stat">
+              <span>Located</span>
+              <h4>Bengaluru, IN</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Badges for Visual Interest -->
+        <div class="floating-badge badge-1">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+          <div class="floating-badge-text">
+            <p>Focus</p>
+            <h4>Design &amp; Dev</h4>
+          </div>
+        </div>
+
+        <div class="floating-badge badge-2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          <div class="floating-badge-text">
+            <p>Education</p>
+            <h4>B.Tech Graduate</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scrolling Tech & Skill Tags Ticker -->
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <div class="ticker-item"><span class="ticker-dot"></span>UI/UX Design</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Frontend Development</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>React.js</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Figma Prototyping</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Design Systems</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Interaction Design</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>HTML5 &amp; CSS3</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Java Programming</div>
+        <!-- Repeat items to make loop seamless -->
+        <div class="ticker-item"><span class="ticker-dot"></span>UI/UX Design</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Frontend Development</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>React.js</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Figma Prototyping</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Design Systems</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Interaction Design</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>HTML5 &amp; CSS3</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Java Programming</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Works Section -->
+  <section id="works" class="reveal">
+    <div class="container">
+      <span class="section-tag">Projects</span>
+      <h2 class="section-title">Production AI <span>Systems & Frameworks</span>.</h2>
+      <p class="section-desc">
+        A handpicked selection of engineered platforms designed to bridge machine learning models with robust web execution layers.
+      </p>
+
+      <div class="works-grid">
+        <!-- Project 1: VibecoderZ -->
+        <article class="work-card" data-project="vibecoderz">
+          <div class="work-img-container">
+            <div class="project-visual-gradient grad-project-1"></div>
+            <!-- Concentric Pulse Rings visual -->
+            <div class="rings-container">
+              <div class="pulse-ring"></div>
+              <div class="pulse-ring"></div>
+              <div class="pulse-ring"></div>
+              <div class="floating-glyph">🎓</div>
+            </div>
+            <div class="code-overlay-box">
+              const path = recommendPath(intent);
+            </div>
+            <div class="work-overlay">
+              <div class="work-overlay-btn">
+                <span>Open Details</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </div>
+            </div>
+          </div>
+          <div class="work-details">
+            <div class="work-header">
+              <div class="work-meta">
+                <span class="work-category">Product Project</span>
+                <span class="work-category">Full-Stack</span>
+              </div>
+            </div>
+            <h3 class="work-title">VibecoderZ</h3>
+            <p class="work-desc">
+              <strong>Role:</strong> Lead Full Stack Developer<br>
+              <strong>Responsibilities:</strong> Designed the learning platform structure, configured adaptive frontend routing, and programmed intent-based recommended learning modules.<br>
+              <strong>Achievements:</strong> Delivered custom paths for 15+ intent metrics, increasing student completion by 28%.
+            </p>
+            <a href="javascript:void(0)" class="work-link" aria-label="VibecoderZ Details">
+              <span>View Project Details</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2: Restaurant Management Platform -->
+        <article class="work-card" data-project="restaurant">
+          <div class="work-img-container">
+            <div class="project-visual-gradient grad-project-2"></div>
+            <div class="rings-container">
+              <div class="pulse-ring"></div>
+              <div class="pulse-ring"></div>
+              <div class="floating-glyph">🍽️</div>
+            </div>
+            <div class="code-overlay-box">
+              const session = sprint48h.execute();
+            </div>
+            <div class="work-overlay">
+              <div class="work-overlay-btn">
+                <span>Open Details</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </div>
+            </div>
+          </div>
+          <div class="work-details">
+            <div class="work-header">
+              <div class="work-meta">
+                <span class="work-category">Matrimony Training</span>
+                <span class="work-category">Frontend</span>
+              </div>
+            </div>
+            <h3 class="work-title">Restaurant Management</h3>
+            <p class="work-desc">
+              <strong>Role:</strong> Frontend UI/UX Developer<br>
+              <strong>Responsibilities:</strong> Designed user-centric dashboard layouts and workflows. Implemented fluid responsive frontend interfaces with a focus on web accessibility.<br>
+              <strong>Achievements:</strong> Programmed key frontend features within a rapid 48-hour sprint, enabling booking systems to process 1,200+ mock monthly visits.
+            </p>
+            <a href="javascript:void(0)" class="work-link" aria-label="Restaurant Management Details">
+              <span>View Project Details</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Journey (Timeline) -->
+  <section id="journey" class="reveal">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <span class="section-tag">History</span>
+        <h2 class="section-title">Professional <span>Timeline & Roles</span></h2>
+        <p class="section-desc" style="margin: 0 auto;">
+          An overview of engineering positions where I have designed scalable software, orchestrated AI services, and implemented cloud systems.
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <!-- Role 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Nov 2025 — Jan 2026</div>
+            <h3 class="timeline-role">UI/UX Developer Intern</h3>
+            <div class="timeline-company">
+              <svg class="timeline-company-logo" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              <span>Enviguide Techno Solutions</span>
+            </div>
+            <p class="timeline-desc">
+              Designed end-to-end user experiences for the company’s core product, including user flows, wireframes, and interface designs. Developed and implemented responsive frontend interfaces, translating mockups into production-ready UI components.
+            </p>
+          </div>
+        </div>
+
+        <!-- Role 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">July 2025 — Oct 2025</div>
+            <h3 class="timeline-role">Product Design Intern</h3>
+            <div class="timeline-company">
+              <svg class="timeline-company-logo" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+              <span>WTA — GenAI Product Engineering</span>
+            </div>
+            <p class="timeline-desc">
+              Analyzed user journeys, workflows, and GenAI product requirements to design intuitive, user-centered interfaces. Created high-fidelity wireframes and user flows in collaboration with product managers and engineering teams.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Toolkit Section -->
+  <section id="skills" class="reveal">
+    <div class="container">
+      <span class="section-tag">Capabilities</span>
+      <h2 class="section-title">Core expertise & <span>specialties</span>.</h2>
+      <p class="section-desc">
+        A map of core disciplines developed through research, dataset fine-tuning, and robust full stack software engineering.
+      </p>
+
+      <div class="skills-grid">
+        <!-- Category 1: UI/UX Design -->
+        <div class="skills-category">
+          <div class="skills-category-header">
+            <div class="skills-category-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+            </div>
+            <h3>UI/UX Design</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">User Research &amp; Wireframing</span>
+                <span class="skill-level">95%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-level="95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Interaction Design</span>
+                <span class="skill-level">92%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-level="92%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Prototyping &amp; Design Systems</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-level="90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Frontend Technologies -->
+        <div class="skills-category">
+          <div class="skills-category-header">
+            <div class="skills-category-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3>Frontend Technologies</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">React.js &amp; JavaScript</span>
+                <span class="skill-level">94%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-level="94%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML5 &amp; CSS3</span>
+                <span class="skill-level">95%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-level="95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Responsive Interface Dev</span>
+                <span class="skill-level">92%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-level="92%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Databases & Programming -->
+        <div class="skills-category">
+          <div class="skills-category-header">
+            <div class="skills-category-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3>Databases &amp; Code</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Firebase Services</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-level="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">MongoDB &amp; MySQL (SQL)</span>
+                <span class="skill-level">82%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-level="82%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Java Programming</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-level="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toolkit badges -->
+      <div class="toolkit-section">
+        <h3 class="toolkit-title">My Toolkit</h3>
+        <div class="toolkit-grid">
+          <div class="tool-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+            <span>Figma</span>
+          </div>
+          <div class="tool-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zM6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3z"></path></svg>
+            <span>FigJam</span>
+          </div>
+          <div class="tool-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8"></path><path d="M12 8v8"></path></svg>
+            <span>GitHub</span>
+          </div>
+          <div class="tool-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Antigravity</span>
+          </div>
+          <div class="tool-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            <span>Notion</span>
+          </div>
+          <div class="tool-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+            <span>Miro</span>
+          </div>
+          <div class="tool-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            <span>VS Code</span>
+          </div>
+          <div class="tool-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            <span>React.js</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section / Facts List Merged -->
+  <section id="about" class="reveal">
+    <div class="container contact-grid" style="grid-template-columns: 1.1fr 0.9fr; gap: 4rem;">
+      <div class="contact-info">
+        <div>
+          <span class="section-tag">Profile</span>
+          <h2 class="section-title">Designer &amp; <span>Frontend Developer</span></h2>
+          <p class="section-desc">
+            I operate at the intersection of visual design and frontend development. Combining user-centered wireframing with structural computer science principles, I build interactive layouts, cohesive design systems, and responsive web layouts that prioritize accessibility.
+          </p>
+          <p class="section-desc" style="margin-top: -2rem;">
+            My development philosophy centers on user feedback, interactive clarity, and layout efficiency. I bridge design deliverables into lightweight, verified web interfaces, ensuring high fidelity matches from design to code.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <!-- System Flow Architecture Chart Visual directly in place of Photo -->
+        <div class="contact-form-container" style="padding: 2rem; margin-bottom: 2rem;">
+          <svg class="architecture-svg" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Design-to-code pipeline visualization">
+            <rect width="100%" height="100%" fill="#12141c" rx="12"/>
+            <g stroke="rgba(255, 107, 53, 0.08)" stroke-width="1">
+              <line x1="50" y1="0" x2="50" y2="300"/>
+              <line x1="150" y1="0" x2="150" y2="300"/>
+              <line x1="250" y1="0" x2="250" y2="300"/>
+              <line x1="350" y1="0" x2="350" y2="300"/>
+              <line x1="0" y1="75" x2="400" y2="75"/>
+              <line x1="0" y1="150" x2="400" y2="150"/>
+              <line x1="0" y1="225" x2="400" y2="225"/>
+            </g>
+            
+            <!-- Nodes -->
+            <rect x="25" y="55" width="65" height="40" rx="4" fill="rgba(18, 20, 28, 0.85)" stroke="var(--accent-orange)" stroke-width="1.5"/>
+            <text x="57.5" y="79" fill="var(--text-primary)" font-family="var(--font-mono)" font-size="8" text-anchor="middle">Discovery</text>
+
+            <rect x="135" y="55" width="65" height="40" rx="4" fill="rgba(18, 20, 28, 0.85)" stroke="var(--accent-orange)" stroke-width="1.5"/>
+            <text x="167.5" y="79" fill="var(--text-primary)" font-family="var(--font-mono)" font-size="8" text-anchor="middle">Wireframes</text>
+
+            <rect x="245" y="55" width="65" height="40" rx="4" fill="rgba(18, 20, 28, 0.85)" stroke="var(--accent-amber)" stroke-width="1.5"/>
+            <text x="277.5" y="79" fill="var(--text-primary)" font-family="var(--font-mono)" font-size="8" text-anchor="middle">Figma UI</text>
+
+            <rect x="315" y="130" width="65" height="40" rx="4" fill="rgba(18, 20, 28, 0.85)" stroke="var(--accent-orange)" stroke-width="1.5"/>
+            <text x="347.5" y="154" fill="var(--text-primary)" font-family="var(--font-mono)" font-size="8" text-anchor="middle">React App</text>
+
+            <!-- Connective Paths -->
+            <path d="M 90 75 L 135 75" stroke="var(--accent-amber)" stroke-width="1.5" fill="none" stroke-dasharray="2,2"/>
+            <path d="M 200 75 L 245 75" stroke="var(--accent-amber)" stroke-width="1.5" fill="none" stroke-dasharray="2,2"/>
+            <path d="M 277.5 95 L 277.5 150 L 315 150" stroke="var(--accent-orange)" stroke-width="1.5" fill="none" stroke-dasharray="2,2"/>
+            <path d="M 57.5 95 L 57.5 150 L 315 150" stroke="var(--accent-orange)" stroke-width="1.5" fill="none" stroke-dasharray="2,2"/>
+
+            <circle cx="347.5" cy="150" r="34" stroke="var(--accent-orange)" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+            
+            <text x="200" y="250" fill="var(--text-secondary)" font-family="var(--font-headers)" font-size="11" font-weight="bold" text-anchor="middle">Design-to-Code Pipeline</text>
+            <text x="200" y="268" fill="var(--text-muted)" font-family="var(--font-mono)" font-size="9" text-anchor="middle">status: active · builds: verified</text>
+          </svg>
+        </div>
+
+        <div class="contact-form-container" style="padding: 2rem; border-top: none;">
+          <div class="contact-detail-text" style="display: flex; flex-direction: column; gap: 0.8rem; font-family: var(--font-mono); font-size: 0.9rem;">
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(255, 107, 53, 0.12); padding-bottom: 0.5rem;">
+              <span style="color: var(--text-muted);">Name</span>
+              <span style="color: var(--text-primary); font-weight: 600;">Lakshmi Dev</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(255, 107, 53, 0.12); padding-bottom: 0.5rem;">
+              <span style="color: var(--text-muted);">Role</span>
+              <span style="color: var(--accent-amber); font-weight: 600;">UI/UX Developer</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(255, 107, 53, 0.12); padding-bottom: 0.5rem;">
+              <span style="color: var(--text-muted);">Location</span>
+              <span style="color: var(--text-secondary);">Bengaluru, India</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(255, 107, 53, 0.12); padding-bottom: 0.5rem;">
+              <span style="color: var(--text-muted);">Education</span>
+              <span style="color: var(--text-secondary);">B.Tech Computer Science</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(255, 107, 53, 0.12); padding-bottom: 0.5rem;">
+              <span style="color: var(--text-muted);">Core Focus</span>
+              <span style="color: var(--accent-orange); font-weight: 600;">Interaction &amp; Frontend</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding-bottom: 0.2rem;">
+              <span style="color: var(--text-muted);">Status</span>
+              <span style="color: #10b981; font-weight: 600;">Available for roles</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="reveal">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <div>
+          <span class="section-tag">Let's work together</span>
+          <h2 class="section-title">Start a <span>conversation</span></h2>
+          <p class="section-desc">
+            Looking for a developer to engineer an AI orchestration pipeline, manage semantic data vectors, or build responsive full stack web interfaces? Drop a line, and let's build something scalable.
+          </p>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="contact-detail-text">
+              <p>Email Me</p>
+              <a href="mailto:hello@lakshmi.dev">hello@lakshmi.dev</a>
+            </div>
+          </div>
+
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="contact-detail-text">
+              <p>Location</p>
+              <h4>Bengaluru, Karnataka, India</h4>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="contact-social-title">Follow Updates</h4>
+          <div class="contact-social-links">
+            <a href="https://linkedin.com/in/lakshmi-dev" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://github.com/lakshmi-dev" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="GitHub Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-container">
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. John Doe" required>
+            <span class="form-error-msg">This field is required.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="hello@company.com" required>
+            <span class="form-error-msg">This field is required.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Project Goal / Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="e.g. Scaling RAG Pipeline" required>
+            <span class="form-error-msg">This field is required.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Project Outline / Message</label>
+            <textarea id="message" name="message" placeholder="Provide a brief context on the scope..." required></textarea>
+            <span class="form-error-msg">This field is required.</span>
+          </div>
+
+          <div id="form-status" class="form-status" role="alert"></div>
+
+          <button type="submit" class="btn-submit">
+            <span class="btn-text">Submit Message</span>
+            <div class="spinner" aria-hidden="true"></div>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Project Detail Overlay Modal -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true">
+    <button id="modal-close" class="modal-close" aria-label="Close case study details modal">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div id="modal-container" class="modal-container">
+      <!-- Container supports both CSS Gradient block or fallback image tag -->
+      <div id="modal-hero-banner" class="modal-hero-banner"></div>
+      <img id="modal-hero-img" src="" alt="Featured Project Visual" class="modal-hero-img" style="display: none;">
+      <span class="modal-category">AI / NLP</span>
+      <h3 class="modal-title">Aurora — RAG Research Engine</h3>
+      
+      <!-- Meta details grid -->
+      <div class="modal-meta-grid">
+        <div class="modal-meta-item">
+          <p>Client</p>
+          <h5>NeuralLabs Research</h5>
+        </div>
+        <div class="modal-meta-item">
+          <p>Role</p>
+          <h5>Lead AI Engineer</h5>
+        </div>
+        <div class="modal-meta-item">
+          <p>Timeline</p>
+          <h5>4 Months (2024)</h5>
+        </div>
+      </div>
+
+      <!-- Main body injected content -->
+      <div class="modal-body">
+        <!-- JS inserts content segment here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <span>Lakshmi Dev</span>
+      </div>
+      <p class="footer-copy">&copy; 2026 Lakshmi Dev. Built with premium custom layout systems.</p>
+      <div class="footer-links">
+        <a href="#hero">Back to Top</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js" type="module"></script>
+</body>
+</html>
